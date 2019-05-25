@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "f53d540d-fba5-4749-acb6-f00a95f1e31f",
+		"name": "UserApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "x-csrftoken",
+						"value": "zWURLmE1MSxPEbWFTyTYn7SCzXbtCG7R"
+					},
+					{
+						"key": "x-ig-app-id",
+						"value": "936619743392450",
+						"disabled": true
+					},
+					{
+						"key": "x-instagram-ajax",
+						"value": "0cf1e9388e85",
+						"disabled": true
+					},
+					{
+						"key": "x-requested-with",
+						"value": "XMLHttpRequest",
+						"disabled": true
+					},
+					{
+						"key": "cookie",
+						"value": "mid=XJ_C4QAEAAEW4jnzqss4h_yC_Iwp; csrftoken=zWURLmE1MSxPEbWFTyTYn7SCzXbtCG7R; ds_user_id=12137380150; sessionid=12137380150%3ABgm2tb3ZUR6hGA%3A14; rur=FRC; urlgen=\"{\\\"122.173.227.197\\\": 24560\\054 \\\"2409:4055:601:e474:3cdf:c0a3:19c8:b0dc\\\": 55836}:1hAV0z:845dwwUmSv053plm6euIe2oMtSM\""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": \"some@gmail.com\", \"password\": \"1234\"}"
+				},
+				"url": {
+					"raw": "http://localhost:4444/api/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"api",
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"email\": \"some@gmail.com\", \"password\": \"1234\"}"
+				},
+				"url": {
+					"raw": "http://localhost:4444/api/user/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4444",
+					"path": [
+						"api",
+						"user",
+						"register"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
